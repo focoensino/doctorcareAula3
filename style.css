@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-color: hsla(170, 100%, 26%, 1);
+  --headline: hsla(210, 11%, 15%, 1);
+  --paragraph: hsla(210, 9%, 31%, 1);
+  --brand-baige: hsl(39, 100%, 97%);
+  --brand-light: hsl(148, 23%, 89%);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+header {
+  width: 37.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4.1rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+}
+
+h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+  margin-bottom: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--paragraph);
+  margin-bottom: 3.2rem;
+}
+
+button {
+  background: var(--primary-color);
+  margin-bottom: 6rem;
+  width: 26.3rem;
+  height: 5.2rem;
+  border-radius: 4rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats {
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+  width: 32.7rem;
+
+  margin-inline: auto;
+  background-color: var(--brand-baige);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+  padding-block: 4rem;
+}
+
+.stat h3 {
+  font-size: 4.8rem;
+  color: var(--headline);
+  line-height: 130%;
+  margin-bottom: 0.4rem;
+}
+
+.stat p {
+  margin: 0;
+  color: var(--primary-color);
+  line-height: 150%;
+}
+
+header img {
+  width: 26.4rem;
+  display: block;
+  margin-inline: auto;
+  object-position: 0 1rem;
+}
+
+header::before {
+  content: '';
+  width: 100vw;
+  height: 108rem;
+  background-color: var(--brand-light);
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
